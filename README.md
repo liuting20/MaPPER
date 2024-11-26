@@ -1,0 +1,75 @@
+<div align=center>
+  
+# MaPPER: Multimodal Prior-guided Parameter Efficient Tuning for Referring Expression Comprehension
+This is the official implementation of [**MaPPER: Multimodal Prior-guided Parameter Efficient Tuning for Referring Expression Comprehension**](https://aclanthology.org/2024.emnlp-main.287). This paper has been accepted by EMNLP Main 2024.
+
+
+
+<p>
+<a href='https://arxiv.org/abs/2409.13609'><img src='https://img.shields.io/badge/Paper-arXiv-red'></a>
+<a href='https://aclanthology.org/2024.emnlp-main.287'><img src='https://img.shields.io/badge/Paper-EMNLP-blue'></a>
+</p>
+
+</div>
+
+## :sparkles: Overview
+<p align="center"> <img src="overview.png" width="1000" align="center"> </p>
+
+In this paper, we perform an in-depth exploration of parameterefficient transfer learning (PETL) methods for REC tasks. We introduce **MaPPER** aimed at improving both the effectiveness and efficiency of visual-text alignment, as well as enhancing visual perception by incorporating local visual semantics. We propose the novel Dynamic Prior Adapter
+(DyPA) and Local Convolution Adapter (LoCA). The former employs aligned prior to dynamically
+adjust the language encoder, while the latter introduces local visual features for enhancing the visual encoder. Extensive experiments demonstrate that our method can outperform the state-of-the-art (SOTA) methods in REC tasks, with only **1.41%** tunable parameters within pre-trained backbones
+
+
+
+### :point_right: Installation
+1.  Clone this repository.
+    ```
+    git clone https://github.com/liuting20/MaPPER.git
+    ```
+
+2.  Prepare for the running environment. 
+
+    ```
+     conda env create -f environment.yaml      
+     pip install -r requirements.txt
+    ```
+
+### :point_right: Getting Started
+
+Please refer to [GETTING_STARGTED.md](GETTING_STARTED.md) to learn how to prepare the datasets and pretrained checkpoints.
+
+
+### :point_right: Training and Evaluation
+
+1.  Training
+    ```
+    bash train.sh
+    ```
+
+    We recommend to set --max_query_len 40 for RefCOCOg, and --max_query_len 20 for other datasets. 
+    
+
+2.  Evaluation
+    ```
+    bash test.sh
+    ```
+
+### :thumbsup: Acknowledge
+This codebase is partially based on [TransVG](https://github.com/djiajunustc/TransVG) and [DARA](https://github.com/liuting20/DARA).
+
+
+## :pushpin: Citation
+Please consider citing our paper in your publications, if our findings help your research.
+```bibtex
+@inproceedings{liu2024mapper,
+  title={MaPPER: Multimodal Prior-guided Parameter Efficient Tuning for Referring Expression Comprehension},
+  author={Liu, Ting and Xu, Zunnan and Hu, Yue and Shi, Liangtao and Wang, Zhiqiang and Yin, Quanjun},
+  booktitle={Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing},
+  pages={4984--4994},
+  year={2024}
+}
+
+```
+
+## :e-mail: Contact
+For any question about our paper or code, please contact [Ting Liu](mailto:liuting20@nudt.edu.cn).
