@@ -38,6 +38,49 @@ adjust the language encoder, while the latter introduces local visual features f
 
 Please refer to [GETTING_STARGTED.md](GETTING_STARTED.md) to learn how to prepare the datasets and pretrained checkpoints.
 
+### Model Zoo
+
+The models are available in [[Gdrive]](https://drive.google.com/drive/folders/1fnD2DlPikdEwZPdw3Aq5ctGZnDQx2FMU?usp=sharing)
+
+<table border="2">
+    <thead>
+        <tr>
+            <th colspan=3> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp RefCOCO </th>
+            <th colspan=3> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp RefCOCO+</th>
+            <th colspan=3> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp RefCOCOg</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>    
+            <td>val</td>
+            <td>testA</td>
+            <td>testB</td>
+            <td>val</td>
+            <td>testA</td>
+            <td>testB</td>
+            <td>g-val</td>
+            <td>u-val</td>
+            <td>u-test</td>
+        </tr>
+    </tbody>
+    <tbody>
+    <tr>
+            <td>86.03</td>
+            <td>88.90</td>
+            <td>81.19</td>
+            <td>74.92</td>
+            <td>81.12</td>
+            <td>65.68</td>
+            <td>74.60</td>
+            <td>76.32</td>
+            <td>75.81</td>
+        </tr>
+    </tbody>
+    <tbody>
+    <tr>   
+    </tbody>
+</table>
+
 
 ### :point_right: Training and Evaluation
 
