@@ -38,7 +38,7 @@ adjust the language encoder, while the latter introduces local visual features f
 
 Please refer to [GETTING_STARGTED.md](GETTING_STARTED.md) to learn how to prepare the datasets and pretrained checkpoints.
 
-### Model Zoo
+ ### :point_right:Model Zoo
 
 The models are available in [[Gdrive]](https://drive.google.com/drive/folders/1fnD2DlPikdEwZPdw3Aq5ctGZnDQx2FMU?usp=sharing)
 
