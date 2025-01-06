@@ -36,7 +36,7 @@ adjust the language encoder, while the latter introduces local visual features f
 
 ### :point_right: Getting Started
 
-Please refer to [GETTING_STARGTED.md](GETTING_STARTED.md) to learn how to prepare the datasets and pretrained checkpoints.
+Please refer to [GETTING_STARTED.md](GETTING_STARTED.md) to learn how to prepare the datasets and pretrained checkpoints.
 
  ### :point_right:Model Zoo
 
@@ -94,7 +94,7 @@ The models are available in [[Gdrive]](https://drive.google.com/drive/folders/1f
     ```
     
 
-    We recommend to set --max_query_len 40 for RefCOCOg, and --max_query_len 20 for other datasets. We recommend to set --epochs 180 (--lr_drop 120 acoordingly) for RefCOCO+, and --epochs 90 (--lr_drop 60 acoordingly) for other datasets.
+    We recommend setting `--max_query_len` to `40` for RefCOCOg, and `--max_query_len` to `20` for other datasets. We recommend setting `--epochs` to `180` (`--lr_drop 120` acoordingly) for RefCOCO+, and `--epochs 90` (`--lr_drop 60` acoordingly) for other datasets.
     
 
 2.  Evaluation
